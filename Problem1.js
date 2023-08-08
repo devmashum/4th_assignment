@@ -1,11 +1,16 @@
-var array = [1, 2, 3, 4, 5];
+function cubeNumber(number) {
+    if (typeof number == 'number') {
+        return Math.pow(number, 3);
+    } else {
+        return "Input is not a number.";
+    }
+}
 
-// Change the last element to a new value
-array[array.length - 1] = 6;
+let result1 = cubeNumber(3);
+let result2 = cubeNumber(4);
+console.log(result1);
+console.log(result2);
 
-console.log(array);
 
 
 
-git remote add origin https://github.com/devmashum/4th_assignment.git
-git push - u origin main
